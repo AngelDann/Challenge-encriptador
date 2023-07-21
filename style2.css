@@ -33,7 +33,7 @@ body {
 }
 
 .divDerecho {
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     height: 100%;
     width: 35%;
     display: flex;
@@ -230,16 +230,17 @@ body {
 }
 
 footer{
-    position: relative;;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    margin-top: 2em;
+    height: 10%;
     background-color: #0a3871;
     opacity: 0; /* El div está inicialmente oculto */ 
     transform: translateY(50px);
-    vertical-align: bottom;
 }
 
 .divRodapie{
+    height: 100%; /* Asegura que el div tiene altura del 100% del footer */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,6 +365,13 @@ footer{
     .desaparece{
         margin-top: auto;
         margin-bottom: auto;
+    }
+
+    .divRodapie{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
     }
 
     #imgRectangulo{
